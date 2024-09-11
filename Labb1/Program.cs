@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 
 static string GetSubString(string userInput, int searchFrom)
 {
@@ -89,8 +87,8 @@ while (searchFrom < userInput.Length)
 
     if (keepGoing == true)
     {
-        int index = searchFrom + substring.Length - 1;
-        PrintChars(userInput, searchFrom, index);
+        int lastIndexOfSubstring = searchFrom + substring.Length - 1;
+        PrintChars(userInput, searchFrom, lastIndexOfSubstring);
     }
     else
     {
